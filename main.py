@@ -44,4 +44,4 @@ def reconcilier(titre, G, E, feuilles_E, attendu, fichier_dessin):
 
 G, E, feuilles_E, attendu = exemple_HSC()
 reconcilier("Exemple 1 : Humain, Souris, Chat", G, E, feuilles_E, attendu,
-            "reconciliation_HSC.png")
+            "arbres/reconciliation_HSC.png")

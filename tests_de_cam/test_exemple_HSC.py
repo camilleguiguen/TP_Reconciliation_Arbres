@@ -28,9 +28,9 @@ G, E, feuilles_E, attendu = exemple_HSC()
 
 # dessiner les arbres avec Biopython
 print("Arbre d'espèces E :", conversion_newick(E) + ";")
-dessiner(conversion_newick(E) + ";", "arbre_especes.png")
+dessiner(conversion_newick(E) + ";", "arbres/arbre_especes.png")
 print("Arbre de gènes G  :", conversion_newick(G) + ";")
-dessiner(conversion_newick(G) + ";", "arbre_genes.png")
+dessiner(conversion_newick(G) + ";", "arbres/arbre_genes.png")
 
 # Vérification du LCA sur l'arbre d'espèces
 print("\nTests LCA sur E :")

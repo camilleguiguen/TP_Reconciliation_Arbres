@@ -64,7 +64,7 @@ def construire_clade(g):
     return clade
 
 
-def dessiner_reconciliation(G, fichier="reconciliation.png"):
+def dessiner_reconciliation(G, fichier="arbres/reconciliation.png"):
     """Dessine l'arbre de gènes réconcilié et l'enregistre en PNG."""
     try:
         import matplotlib

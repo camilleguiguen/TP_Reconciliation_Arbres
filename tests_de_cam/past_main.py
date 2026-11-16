@@ -1,4 +1,4 @@
-"""Construit un petit arbre, teste le LCA, affiche l'abre avec Biopython."""
+"""Premier main : construit un petit arbre, teste le LCA, affiche l'abre avec Biopython."""
 from src.objet import Node, conversion_newick
 from src.lca import findLCA
 from io import StringIO

@@ -1,6 +1,6 @@
-"""structure d'arbre inspiré de struct node de l'algo recurssif findLCA() 
+"""structure d'arbre inspiré de struct Node de l'algo recurssif findLCA() 
 
-celle de base :  
+celle de base en C++:  
 struct node {
     int data; 
     struct node *left; 
@@ -8,7 +8,7 @@ struct node {
 };
 
 mes ajouts :
-projection, evenement et pertes
+projection, evenement et pertes (voir rapport pour explications)
 """
 
 

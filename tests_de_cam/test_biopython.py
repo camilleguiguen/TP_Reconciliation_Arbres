@@ -3,7 +3,9 @@ from io import StringIO
 import matplotlib.pyplot as plt
 from Bio import Phylo
 
-from src.objet import Node, conversion_newick
+from src.objet import Node
+from src.dessiner_arbres import conversion_newick
+
 
 A, B, C = Node("A"), Node("B"), Node("C")
 D = Node("D", A, B)

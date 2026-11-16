@@ -61,7 +61,7 @@ def remonter_arbre_genes(g, E):
           % (g.data, proj_gauche.data, proj_droite.data, ancetre.data, g.evenement))
 
 
-##############Lancer étapes
+##############Lancer étapes 1 et 2
 
 def reconcilier(G, E, feuilles_E):
     """Lance les étapes 1 et 2 sur l'arbre de gènes G."""

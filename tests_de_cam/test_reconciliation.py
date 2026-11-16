@@ -1,12 +1,12 @@
-"""Teste les premières étapes de la réconciliation sur l'exemple des mammifères.
+"""Teste les 2 premières étapes de la réconciliation sur l'exemple des mammifères.
 Lancer :  python3 test_reconciliation.py
 """
 from src.exemple_HSC import exemple_HSC
 from src.reconciliation import reconcilier, afficher_annotations, est_feuille
 
-G, S, feuilles_S, attendu = exemple_HSC()
+G, E, feuilles_E, attendu = exemple_HSC()
 
-reconcilier(G, S, feuilles_S)
+reconcilier(G, E, feuilles_E)
 
 print("Résultat :")
 afficher_annotations(G)
