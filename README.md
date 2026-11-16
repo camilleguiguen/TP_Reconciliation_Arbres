@@ -31,3 +31,5 @@ python3 main.py
 - `src/dessiner_arbres.py` : conversion_newick + fonction Biopython pour afficher les arbres
 
 - `src/exemple_HSC.py` : exemple de test correspondant à la figure 1 du rapport (Humain, Souris, Chat)
+
+Le dossier `tests_de_cam` contient des fichiers utilisé au long du developpement mais pas utilisé par l'algo final
