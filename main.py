@@ -1,11 +1,10 @@
 """Réconciliation d'un arbre de gènes avec un arbre d'espèces (modèle DL).
-Lancer :  python3 main.py
+Lancer :  python3 main.py 
 """
-# NB : si tes fonctions ont un autre nom, adapte ces deux imports.
 from src.reconciliation import associer_feuilles, remonter_arbre_genes
 from src.pertes import calculer_pertes
 from src.bilan import compter_evenements, afficher_noeuds
-from src.dessiner_arbres import dessiner
+from src.dessiner_arbres import dessiner_reconciliation
 from src.exemple_HSC import exemple_HSC
 
 def reconcilier(titre, G, E, feuilles_E, attendu, fichier_dessin):
@@ -39,7 +38,7 @@ def reconcilier(titre, G, E, feuilles_E, attendu, fichier_dessin):
     else:
         print("  -> ATTENTION : différent de l'attendu", attendu)
 
-    dessiner(G, fichier_dessin)
+    dessiner_reconciliation(G, fichier_dessin)
     print()
 
 

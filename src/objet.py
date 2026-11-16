@@ -8,7 +8,7 @@ struct node {
 };
 
 mes ajouts :
-projection et evenement
+projection, evenement et pertes
 """
 
 
@@ -20,16 +20,3 @@ class Node:
         self.projection = None   # noeud de E associé au gène de G
         self.evenement = None    # "feuille", "spéciation", "duplication"
         self.pertes = []         # noeuds de E perdus sur l'arête parent -> ce nœud
-
-def conversion_newick(noeud):
-    """renvoie chaîne Newick de l'arbre pour pouvoir faire un arbre biopython"""
-    # cas de base : une feuille, on renvoie juste son nom
-    if noeud.left is None and noeud.right is None:
-        return noeud.data
-
-    # général : on convertit fils gauche et fils droit
-    gauche = conversion_newick(noeud.left)
-    droite = conversion_newick(noeud.right)
-
-    # return (gauche,droite)nom
-    return "(" + gauche + "," + droite + ")" + noeud.data

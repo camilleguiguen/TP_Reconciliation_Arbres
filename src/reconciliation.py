@@ -9,8 +9,7 @@ from src.lca import findLCA
 
 def est_feuille(noeud):
     """si pas de fils droit et pas de fils gauche alors c'est une feuille"""
-    if noeud.left is None and noeud.right is None:
-        return True
+    return noeud.left is None and noeud.right is None
 
 def espece_de(nom_gene):
     """Trouve l'espece d'un nom de gène. exemple : gène 'Humain_2' = 'Humain' """
@@ -74,4 +73,4 @@ def afficher_annotations(g):
     if not est_feuille(g):
         afficher_annotations(g.left)
         afficher_annotations(g.right)
-    print("  %-10s Projection = %-6s  %s" % (g.data, g.proj.data, g.evenement))
+    print("  %-10s Projection = %-6s  %s" % (g.data, g.projection.data, g.evenement))
